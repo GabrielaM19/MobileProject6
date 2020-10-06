@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:text="Baza Danych z Lista Do Zrobienia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBazaDanych"
+        android:background="#c0cbf4"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etNewTask"
+        android:hint="Dodaj nowe zadanie ... "
+        android:visibility="gone">
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:id="@+id/lvTodos"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"></ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llNewTaskButtons"
+        android:visibility="gone">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fab9b9"
+            android:textColor="#000"
+            android:id="@+id/btnSave"
+            android:text="Zapisz zadanie "></Button>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#bdf7bc"
+            android:textColor="#000"
+            android:id="@+id/btnCancel"
+            android:text="Anuluj"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llControlButtons">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnAddNew"
+            android:background="#c0cbf4"
+            android:textColor="#000"
+            android:text="Dodaj nowe Zadanie"
+            android:layout_width="fill_parent"></Button>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btnClearCompleted"
+            android:background="#fcf3a6"
+            android:textColor="#000"
+            android:text="Wyczysc liste z zadan wykonanych"
+            android:layout_width="fill_parent"></Button>
+    </LinearLayout>
+</LinearLayout>
